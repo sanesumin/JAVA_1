@@ -1,0 +1,26 @@
+1. 연산시 피연산자의 타입이 같아야 하지만, 다른경우
+	더큰 타입의 피연산자에 맞추어 자동형변환된 후 계산된다.
+	
+2. 예시) int + double --> double에 맞춘다.
+*만약에 꼭 int로 해야한다면
+int +(int) double(강제타입변환후)
+3.자료형 원칙:
+	자바는 정수 연산일 경우 int타입을 기본으로 한다.
+	이유:피연산자를 4byte 단위로 저장하기 때문
+	그래서 크기가 4byte보다 작은 타입(byte, char, short)은 int타입으로 변환된후
+	연산이 수행된다.
+	
+	예시) int result = [byte, char, short,int]
+						연산자(+,-,*,/,%)
+						[byte, char, short,int]
+	그리고 int로 바뀌어 저장된 연산의 결과를 다시 문자로
+	출력하려면int 값을 char타입으로 강제 변환 해야함
+	
+	2) long타입으로 자동 타입 변환
+	예시) long result = [long] 연산자(+,-,*,/,%)
+						[byte, char, short,int]
+	3) 실수 리터럴, double이 있으면, double 타입으로 산출됨
+	예시) double result = [실수, double변수]
+						연산자(+,-,*,/,%)
+						[byte, char, short,int,float, double]
+	
