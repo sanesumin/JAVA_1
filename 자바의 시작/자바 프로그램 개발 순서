@@ -1,0 +1,10 @@
+1. .java 소스 파일 작성
+2. 컴파일러(javac.exe)로 바이트 코드 파일(.class)생성
+	: 같은 폴더에 생김.
+3. JVM 구동 명령어(java.exe)로 실행
+
+public class Hello{
+	public static void main(String[] args){
+	System.out.println("JAVA HELLO");
+	}
+}
